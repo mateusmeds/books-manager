@@ -1,6 +1,7 @@
 package br.com.mateus.bookstore.book.entity;
 
 import br.com.mateus.bookstore.author.entity.Author;
+import br.com.mateus.bookstore.entity.BaseEntity;
 import br.com.mateus.bookstore.publisher.entity.Publisher;
 import br.com.mateus.bookstore.user.entity.User;
 import jakarta.persistence.*;
@@ -8,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Book {
+public class Book extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

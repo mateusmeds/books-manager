@@ -1,6 +1,7 @@
 package br.com.mateus.bookstore.user.entity;
 
 import br.com.mateus.bookstore.book.entity.Book;
+import br.com.mateus.bookstore.entity.BaseEntity;
 import br.com.mateus.bookstore.user.enums.Gender;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -11,7 +12,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "\"USER\"")
-public class User {
+public class User extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
