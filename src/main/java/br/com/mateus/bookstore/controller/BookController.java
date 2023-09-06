@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/books")
+@RequestMapping("/api/v1/hello")
 public class BookController {
     @GetMapping
     @Operation(summary = "Livros", responses = {
             @ApiResponse(
                     responseCode = "200",
-                    description = "Livros de livros",
+                    description = "Lista de livros",
                     content = @Content(mediaType = "application/json")
             ),
     })
